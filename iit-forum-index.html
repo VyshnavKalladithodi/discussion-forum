@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <title>MissionEd</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Discussion forum of MissionEd where students can interact to IITians.">
+    <meta name="author" content="Vyshnav K">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./IIT_FORUM-files/favicon.ico" />
+    <link rel="stylesheet" href="./IIT_FORUM-files/stylesheets.css" />        
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+           
+            <div class="logo">
+                <a href="#">MISSION-ED</a>
+            </div>
+
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li class="drop-down"><a href="#">IIT's</a>
+                        <ul>
+                            <li> <a href="#">Kharagpur </a></li>
+                            <li> <a href="#">Bombay </a></li>
+                            <li> <a href="#">Madras </a></li>
+                            <li> <a href="#">Kanpur </a></li>
+                            <li> <a href="#">Delhi </a></li>
+                            <li> <a href="#">Guwahati </a></li>
+                            <li> <a href="#">Roorkee </a></li>
+                            <li> <a href="#">Ropar </a></li>
+                            <li> <a href="#">Bhubaneswar </a></li>
+                            <li> <a href="#">Gandhinagar </a></li>
+                            <li> <a href="#">Hyderabad </a></li>
+                            <li> <a href="#"> Jodhpur </a></li>
+                            <li> <a href="#">Patna </a></li>
+                            <li><a href="#">Indore </a></li>
+                            <li> <a href="#">Mandi </a></li>
+                            <li> <a href="#">(BHU) Varanasi </a></li>
+                            <li> <a href="#">Palakkad </a></li>
+                            <li> <a href="#">Tirupati </a></li>
+                            <li> <a href="#">(ISM) Dhanbad </a></li>
+                            <li> <a href="#">Bhilai </a></li>
+                            <li> <a href="#">Goa </a></li>
+                            <li> <a href="#">Jammu </a></li>
+                            <li> <a href="#">Dharwad </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop-down"><a href="#">NIT's</a>
+                        <ul>
+                            <!-- List of NITS....Updated Soon -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+<!--            <p></p>-->
+        </div>
+    </nav>
+
+    <section class="home">
+    <p id="insti-name">Indian Institute of Technology, Kharagpur</p>
+    </section>
+    
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">Ask Your Question ?</h2>
+
+        <div class="textbox">
+            <form method="get">
+                <input id="textbox" type="text" class="text" rows="100">
+            </form>
+        </div>
+        
+        <div class="button">
+        <div id="btn">
+            <div id="translate"></div>
+                  <a href="#">POST</a>
+        </div>
+        </div>
+                
+        <br>
+        <hr id="h-line" />
+                
+        <div class="recent-posts">
+           <h3 class="myH3">Recent Discussion</h3>         
+        </div>
+        
+        
+        <div class="iit-contacts">
+          <h4 id="myH4"> </h4>
+           <ul id="contacts">
+               <li>IIT KGP member 1</li>
+               <li>IIT KGP member 2</li>
+                <li>IIT KGP member 3</li>
+                 <li>IIT KGP member 4</li>
+                  <li>IIT KGP member 5</li>
+                   <li>IIT KGP member 6</li>
+                    <li>IIT KGP member 7</li>            
+           </ul>            
+        </div>      
+            
+    </div>
+    <hr>
+    <footer id="f">
+        <p>
+            ©2020.All rights reserved
+        </p>
+    </footer>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./IIT_FORUM-files/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
